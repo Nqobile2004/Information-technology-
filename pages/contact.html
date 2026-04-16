@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Tech Academy</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+   
+    <header>
+        <h1>Future Tech Academy</h1>
+        <nav>
+            <a href="../index.html">Home</a> | 
+            <a href="courses.html">Courses</a> | 
+            <a href="about.html">About</a> | 
+            <a href="gallery.html">Gallery</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Future Tech Academy</h2>
+        <p>Have questions about our courses, fees, or enrolment? Reach out to the right team below or send us a message. For quick answers, check our <abbr title="Frequently Asked Questions">FAQs</abbr> at the bottom of this page.</p>
+
+        <section id="contact-table">
+            <h3>Department Contacts</h3>
+            <table border="1">
+                <caption>Direct Contact Details by Department</caption>
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Contact Person</th>
+                        <th>Email Address</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>General Enquiries</td>
+                        <td>Front Desk</td>
+                        <td><a href="mailto:info@futuretechacademy.co.za">info@futuretechacademy.co.za</a></td>
+                        <td>011 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>Admissions</td>
+                        <td>Nomsa Dlamini</td>
+                        <td><a href="mailto:admissions@futuretechacademy.co.za">admissions@futuretechacademy.co.za</a></td>
+                        <td>011 123 4568</td>
+                    </tr>
+                    <tr>
+                        <td>Finance & Bursaries</td>
+                        <td>Finance Office</td>
+                        <td><a href="mailto:finance@futuretechacademy.co.za">finance@futuretechacademy.co.za</a></td>
+                        <td>011 123 4569</td>
+                    </tr>
+                    <tr>
+                        <td>Student Support</td>
+                        <td>Lerato Molefe</td>
+                        <td><a href="mailto:support@futuretechacademy.co.za">support@futuretechacademy.co.za</a></td>
+                        <td>011 123 4570</td>
+                    </tr>
+                    <tr>
+                        <td>Career Services</td>
+                        <td>James Peterson</td>
+                        <td><a href="mailto:careers@futuretechacademy.co.za">careers@futuretechacademy.co.za</a></td>
+                        <td>011 123 4571</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="physical-address">
+            <h3>Visit Our Campus</h3>
+            <address>
+                Future Tech Academy<br>
+                123 Tech Hub Street<br>
+                Braamfontein<br>
+                Johannesburg, 2001<br>
+                South Africa
+            </address>
+
+            <h4>Find Us:</h4>
+            <ul>
+                <li>We are located 5 minutes from Wits University Main Campus</li>
+                <li>On the Rea Vaya BRT route - T1 line, stop B12</li>
+                <li>Secure parking available for students at R20 per day</li>
+                <li>Building entrance is wheelchair accessible with ramps and lifts</li>
+                <li>Office hours: Monday to Friday, 08:00 - 17:00. Closed weekends and public holidays</li>
+            </ul>
+
+            <figure>
+                <img src="../media/campus-map.jpg" alt="Map showing Future Tech Academy location in Braamfontein" width="600">
+                <figcaption>Future Tech Academy campus location in Braamfontein, Johannesburg</figcaption>
+            </figure>
+        </section>
+
+        <section id="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post" enctype="multipart/form-data">
+                
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="full-name">Full Name <abbr title="required">*</abbr></label><br>
+                        <input type="text" id="full-name" name="full-name" required minlength="2">
+                    </p>
+                    
+                    <p>
+                        <label for="id-number">ID Number <abbr title="required">*</abbr></label><br>
+                        <input type="text" id="id-number" name="id-number" required minlength="13" maxlength="13">
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email Address <abbr title="required">*</abbr></label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    
+                    <p>
+                        <label for="confirm-email">Confirm Email <abbr title="required">*</abbr></label><br>
+                        <input type="email" id="confirm-email" name="confirm-email" required>
+                    </p>
+                    
+                    <p>
+                        <label for="phone">Contact Number <abbr title="required">*</abbr></label><br>
+                        <input type="tel" id="phone" name="phone" required maxlength="15">
+                    </p>
+                    
+                    <p>
+                        <label for="dob">Date of Birth</label><br>
+                        <input type="date" id="dob" name="dob">
+                    </p>
+                    
+                    <p>
+                        <label for="portfolio">LinkedIn or Portfolio URL</label><br>
+                        <input type="url" id="portfolio" name="portfolio" placeholder="https://">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Interest</legend>
+                    
+                    <p>
+                        <label for="course-interest">Course of Interest <abbr title="required">*</abbr></label><br>
+                        <select id="course-interest" name="course-interest" required>
+                            <option value="">--Please choose an option--</option>
+                            <option value="web-dev">Web Development Fundamentals</option>
+                            <option value="data-science">Data Science & Python</option>
+                            <option value="cybersecurity">Cybersecurity Essentials</option>
+                            <option value="cloud">Cloud Computing with AWS</option>
+                            <option value="unsure">I'm not sure yet</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="qualification">Highest Qualification <abbr title="required">*</abbr></label><br>
+                        <select id="qualification" name="qualification" required>
+                            <option value="">--Select qualification--</option>
+                            <option value="grade12">Grade 12 / Matric</option>
+                            <option value="certificate">Certificate</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="degree">Bachelor's Degree</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>Preferred Study Mode:</p>
+                    <p>
+                        <input type="radio" id="full-time" name="study-mode" value="full-time">
+                        <label for="full-time">Full-Time</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="part-time" name="study-mode" value="part-time" checked>
+                        <label for="part-time">Part-Time</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="self-paced" name="study-mode" value="self-paced">
+                        <label for="self-paced">Self-Paced Online</label>
+                    </p>
+                    
+                    <p>
+                        <label for="start-date">Preferred Start Date</label><br>
+                        <input type="date" id="start-date" name="start-date">
+                    </p>
+                    
+                    <p>
+                        <label for="call-time">Best Time to Call You</label><br>
+                        <input type="time" id="call-time" name="call-time">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    
+                    <p>
+                        <label for="subject">Subject <abbr title="required">*</abbr></label><br>
+                        <input type="text" id="subject" name="subject" required>
+                    </p>
+                    
+                    <p>
+                        <label for="message">Motivation for Applying <abbr title="required">*</abbr></label><br>
+                        <textarea id="message" name="message" rows="5" cols="50" required minlength="50" placeholder="Tell us why you want to join Future Tech Academy and your career goals..."></textarea>
+                    </p>
+                    
+                    <p>
+                        <label for="special-reqs">Special Requirements or Questions</label><br>
+                        <textarea id="special-reqs" name="special-reqs" rows="3" cols="50" placeholder="e.g. accessibility needs, payment questions"></textarea>
+                    </p>
+                    
+                    <p>
+                        <label for="documents">Upload Supporting Documents</label><br>
+                        <input type="file" id="documents" name="documents">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Declarations</legend>
+                    
+                    <p>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the terms and conditions <abbr title="required">*</abbr></label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="popia" name="popia" required>
+                        <label for="popia">I consent to my data being processed per POPIA <abbr title="required">*</abbr></label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="marketing" name="marketing">
+                        <label for="marketing">I want to receive course updates and newsletters</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Application</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+
+        <section id="faq">
+            <h3>Frequently Asked Questions</h3>
+            <dl>
+                <dt>Do I need a laptop for the course?</dt>
+                <dd>Yes, all students need their own laptop. Minimum specs: 8GB RAM, i5 processor or equivalent. We offer a laptop rental scheme for R300/month if needed.</dd>
+                
+                <dt>Are your courses accredited?</dt>
+                <dd>Future Tech Academy is MICT SETA accredited. Our AWS and CompTIA courses also prepare you for international vendor certifications.</dd>
+                
+                <dt>Can I study part-time while working?</dt>
+                <dd>Absolutely. All courses are designed for working professionals with evening and weekend classes, plus recorded sessions.</dd>
+                
+                <dt>What is the refund policy?</dt>
+                <dd>Full refund if you withdraw 7 days before course start. 50% refund in the first week. No refunds after week 2.</dd>
+                
+                <dt>Do you offer job placement?</dt>
+                <dd>We offer career support, not guaranteed placement. This includes CV reviews, mock interviews, and access to our hiring partner network. 78% of 2024 graduates found tech roles within 6 months.</dd>
+                
+                <dt>Is there an age limit?</dt>
+                <dd>No upper age limit. Minimum age is 18. We welcome career changers of all ages.</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>Future Tech Academy | Strictly for Educational Use | Page 5 of 22</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
+
